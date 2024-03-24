@@ -1,0 +1,23 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: umi_hardware
+    relative_path: description/urdf/UMIRobot.urdf.xacro
+  srdf:
+    relative_path: config/UMIRobot.srdf
+  package_settings:
+    author_name: BarisYazici
+    author_email: barisyazici@alumni.sabanciuniv.edu
+    generated_timestamp: 1707655052
+  control_xacro:
+    command:
+      - position
+    state:
+      []
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      []

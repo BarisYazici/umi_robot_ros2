@@ -1,0 +1,33 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    # umi_robot_joint_trajectory_controller:
+    #   type: joint_trajectory_controller/JointTrajectoryController
+
+    umi_planner_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+# umi_robot_joint_trajectory_controller:
+#   ros__parameters:
+#     joints:
+#       []
+#     command_interfaces:
+#       []
+#     state_interfaces:
+#       []
+umi_planner_controller:
+  ros__parameters:
+    joints:
+      - UMIRobot_joint_1
+      - UMIRobot_joint_2
+      - UMIRobot_joint_3
+      - UMIRobot_joint_4
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position

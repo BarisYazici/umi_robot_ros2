@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="UMIRobot">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import UMIRobot urdf file -->
+    <xacro:include filename="$(find umi_hardware)/description/urdf/UMIRobot.urdf.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="UMIRobot.ros2_control.xacro" />
+
+
+    <xacro:UMIRobot_ros2_control name="UmiRobotHardwareInterface" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

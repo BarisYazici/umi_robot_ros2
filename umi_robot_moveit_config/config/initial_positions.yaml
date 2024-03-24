@@ -1,0 +1,7 @@
+# Default initial positions for UMIRobot's ros2_control fake system
+
+initial_positions:
+  UMIRobot_joint_1: 0
+  UMIRobot_joint_2: 0
+  UMIRobot_joint_3: 0
+  UMIRobot_joint_4: 0
